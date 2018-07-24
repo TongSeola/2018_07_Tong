@@ -1,0 +1,31 @@
+def motor (x, Motor_A, Motor_B):
+    if x == 'True':
+        GPIO.output(Motor_A, GPIO.LOW)
+        GPIO.output(Motor_B, GPIO.HIGH)
+    elif x =='False':
+        GPIO.output(Motor_A, GPIO.HIGH)
+        GPIO.output(Motor_B, GPIO.LOW)
+    else :
+        print('Config Error')
+
+
+
+def leftmotor(x):
+    if x == True:
+        GPIO.output(MotorLeft_A, GPIO.HIGH)
+        GPIO.output(MotorLeft_B, GPIO.LOW)
+    elif x == False:
+        GPIO.output(MotorLeft_A, GPIO.LOW)
+        GPIO.output(MotorLeft_B, GPIO.HIGH)
+    else:
+        print('Config Error')
+
+def rightmotor(x):
+    if x == True:
+        GPIO.output(MotorRight_A, GPIO.LOW)
+        GPIO.output(MotorRight_B, GPIO.HIGH)
+    elif x == False:
+        GPIO.output(MotorRight_A, GPIO.HIGH)
+        GPIO.output(MotorRight_B, GPIO.LOW)
+    else :
+        print('Config Error')
