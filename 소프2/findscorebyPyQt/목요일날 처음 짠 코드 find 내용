@@ -1,0 +1,108 @@
+    def readScoreDB(self):                           #test3_4.dat read and make dictionary
+        try:
+            fH = open(self.dbfilename , 'rb')
+        except FileNotFoundError as e:
+            print("New DB: ", self.dbfilename)
+            return []
+
+        #scdb is test3_4.py read and make pickle
+        try:
+            self.scdb = pickle.load(fH)
+        except:
+            print("Empty DB: ", self.dbfilename)
+        else:
+            print("Open DB: ", self.dbfilename)
+        fH.close()
+        return self.scdb
+
+    def writeScoreDB(self):                               # write the data into person db
+        fH = open(self.dbfilename, 'wb')
+        pickle.dump(self.scdb, fH)
+        fH.close()
+
+
+    def doScoreDB(self):                                       #input and infinite
+        sender =self.sender()
+        while (True):
+            #inputstr = (input("Score DB >"))
+            #if inputstr == "": continue
+            #parse = inputstr.split(" ")
+
+            if sender.text() == 'Add':
+                #Erro_len(4,parse)
+                #try:
+                #    parse[3] or parse[2]
+                #except:
+                #    print("Please, enter Name Age Score")
+                #else:
+                try:
+                    record = {'Name': nameEdit.text(), 'Age': ageEdit.text(), 'Score': scoreEdit.text()}
+                    self.scdb += [record]
+                except : #내가 새로 만듦
+                    print("Error")
+
+            elif sender.text() == 'Del':
+                 #Erro_len(2,parse)
+                 for k in range(0, len(self.scdb)):
+                     for p in (self.scdb):
+                        if p['Name'] == nameEdit.text():
+                            self.scdb.remove(p)
+
+            elif sender.text() == 'Show':
+                 try:
+                     if sender.text() == 'Name' :
+                         sortKey = nameEdit.text()
+                     if sender.text() == 'Age' :
+                         sortKey = ageEdit.text()
+                     if sender.text() == 'Score' :
+                         sortKey = scoreEdit.text()
+                     showScoreDB(self.scdb, sortKey)
+
+                 except:
+                     print ("Error")
+                     #for p in self.scdb:
+                     #    if p['Name'] != parse[1] or p['Age'] != parse[1] or p['Score'] != parse[1]:
+                     #        print("Please, enter right spelling")
+                     #        break
+
+            elif sender.text() == 'Find':
+                try:
+                    #Erro_len(2,parse)
+                    dic_find = []
+                except:
+                    try:
+                        for p in self.scdb:
+                            if p['Name'] == nameEdit.text():
+                                dic_find += [p]
+                            sortKey = 'Name'
+                        self.showScoreDB()
+                    except:
+                        print("Please, enter Name")
+
+            elif sender.text() == 'Inc':
+                try:
+                    for p in self.scdb:
+                        if p['Name'] == nameEdit.text():
+                            p['Score'] = str(int(p['Score']) + int(scoreEdit.text()))
+                            break
+
+                except:
+                    print("Please, enter Name and Score")
+
+            #elif parse[0] == 'quit':                          #stop
+            #    break
+
+            #else:
+            #    print("Invalid command: " + parse[0])
+
+
+    def showScoreDB(self):                           #show scdb
+        for p in sorted(self.scdb, key=lambda person: person[keyname]):
+            for attr in sorted(p):
+                print(attr + "=" + p[attr], end=' ')
+            print()
+
+
+    def Erro_len(self, length, parse):
+        while len(parse)>length :
+            print("Please, enter suitable sentence")
