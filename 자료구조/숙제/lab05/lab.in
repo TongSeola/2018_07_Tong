@@ -1,0 +1,28 @@
+ins 0 1
+ins 2 2
+ins 0 3
+ins 1 4
+ins 3 5
+delf
+ins 2 6
+ins 4 8
+delf
+ins 2 10
+delf
+ins 3 11
+delf
+ins 1 13
+delf
+ins 2 14
+delf
+ins 4 16
+delf
+ins 5 17
+ins 10 17
+delf
+delf
+delf
+delf
+delf
+ins 0 18
+quit

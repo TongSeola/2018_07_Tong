@@ -1,0 +1,140 @@
+CMD : ins 1
+Dbl List From the Last (1) : 1 
+List has 1 elements
+
+CMD : del 1
+Dbl List From the Last (0) : 
+List has 0 elements
+
+CMD : del 1
+Cannot delete item 1
+Dbl List From the Last (0) : 
+List has 0 elements
+
+CMD : ins 2
+Dbl List From the Last (1) : 2 
+List has 1 elements
+
+CMD : ins 3
+Dbl List From the Last (2) : 2 3 
+List has 2 elements
+
+CMD : del 2
+Dbl List From the Last (1) : 3 
+List has 1 elements
+
+CMD : del 3
+Dbl List From the Last (0) : 
+List has 0 elements
+
+CMD : ins 4
+Dbl List From the Last (1) : 4 
+List has 1 elements
+
+CMD : ins 5
+Dbl List From the Last (2) : 4 5 
+List has 2 elements
+
+CMD : del 5
+Dbl List From the Last (1) : 4 
+List has 1 elements
+
+CMD : del 4
+Dbl List From the Last (0) : 
+List has 0 elements
+
+CMD : del 3
+Cannot delete item 3
+Dbl List From the Last (0) : 
+List has 0 elements
+
+CMD : ins 6
+Dbl List From the Last (1) : 6 
+List has 1 elements
+
+CMD : ins 8
+Dbl List From the Last (2) : 6 8 
+List has 2 elements
+
+CMD : del 8
+Dbl List From the Last (1) : 6 
+List has 1 elements
+
+CMD : ins 10
+Dbl List From the Last (2) : 6 10 
+List has 2 elements
+
+CMD : del 1
+Cannot delete item 1
+Dbl List From the Last (2) : 6 10 
+List has 2 elements
+
+CMD : ins 11
+Dbl List From the Last (3) : 6 10 11 
+List has 3 elements
+
+CMD : del 4
+Cannot delete item 4
+Dbl List From the Last (3) : 6 10 11 
+List has 3 elements
+
+CMD : ins 13
+Dbl List From the Last (4) : 6 10 11 13 
+List has 4 elements
+
+CMD : del 10
+Dbl List From the Last (3) : 6 11 13 
+List has 3 elements
+
+CMD : ins 14
+Dbl List From the Last (4) : 6 11 13 14 
+List has 4 elements
+
+CMD : del 3
+Cannot delete item 3
+Dbl List From the Last (4) : 6 11 13 14 
+List has 4 elements
+
+CMD : ins 16
+Dbl List From the Last (5) : 6 11 13 14 16 
+List has 5 elements
+
+CMD : del 3
+Cannot delete item 3
+Dbl List From the Last (5) : 6 11 13 14 16 
+List has 5 elements
+
+CMD : ins 17
+Dbl List From the Last (6) : 6 11 13 14 16 17 
+List has 6 elements
+
+CMD : ins 17
+Dbl List From the Last (7) : 6 11 13 14 16 17 17 
+List has 7 elements
+
+CMD : del 11
+Dbl List From the Last (6) : 6 13 14 16 17 17 
+List has 6 elements
+
+CMD : del 12
+Cannot delete item 12
+Dbl List From the Last (6) : 6 13 14 16 17 17 
+List has 6 elements
+
+CMD : del 13
+Dbl List From the Last (5) : 6 14 16 17 17 
+List has 5 elements
+
+CMD : del 14
+Dbl List From the Last (4) : 6 16 17 17 
+List has 4 elements
+
+CMD : del 15
+Cannot delete item 15
+Dbl List From the Last (4) : 6 16 17 17 
+List has 4 elements
+
+CMD : ins 18
+Dbl List From the Last (5) : 6 16 17 17 18 
+List has 5 elements
+

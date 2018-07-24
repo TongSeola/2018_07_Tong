@@ -1,0 +1,75 @@
+CMD : ins 2
+Min Heap : - 2  
+
+CMD : ins 19
+Min Heap : - 2  19  
+
+CMD : ins 3
+Min Heap : - 2  19  3  
+
+CMD : post 1 : 19 3 2 
+Min Heap : - 2  19  3  
+
+CMD : ins 15
+Min Heap : - 2  15  3  19  
+
+CMD : ins 1
+Min Heap : - 1  2  3  19  15  
+
+CMD : ins 4
+Min Heap : - 1  2  3  19  15  4  
+
+CMD : ins 11
+Min Heap : - 1  2  3  19  15  4  11  
+
+CMD : ins 6
+Min Heap : - 1  2  3  6  15  4  11  19  
+
+CMD : post 3 : 4 11 3 
+Min Heap : - 1  2  3  6  15  4  11  19  
+
+CMD : ins 17
+Min Heap : - 1  2  3  6  15  4  11  19  17  
+
+CMD : ins 7
+Min Heap : - 1  2  3  6  7  4  11  19  17  15  
+
+CMD : ins 18
+Min Heap : - 1  2  3  6  7  4  11  19  17  15  18  
+
+CMD : post 2 : 19 17 6 15 18 7 2 
+Min Heap : - 1  2  3  6  7  4  11  19  17  15  18  
+
+CMD : ins 16
+Min Heap : - 1  2  3  6  7  4  11  19  17  15  18  16  
+
+CMD : ins 5
+Min Heap : - 1  2  3  6  7  4  11  19  17  15  18  16  5  
+
+CMD : post 4 : 19 17 6 
+Min Heap : - 1  2  3  6  7  4  11  19  17  15  18  16  5  
+
+CMD : ins 10
+Min Heap : - 1  2  3  6  7  4  10  19  17  15  18  16  5  11  
+
+CMD : ins 12
+Min Heap : - 1  2  3  6  7  4  10  19  17  15  18  16  5  11  12  
+
+CMD : ins 8
+Min Heap : - 1  2  3  6  7  4  10  8  17  15  18  16  5  11  12  19  
+
+CMD : ins 14
+Min Heap : - 1  2  3  6  7  4  10  8  17  15  18  16  5  11  12  19  14  
+
+CMD : ins 13
+Min Heap : - 1  2  3  6  7  4  10  8  13  15  18  16  5  11  12  19  14  17  
+
+CMD : ins 9
+Min Heap : - 1  2  3  6  7  4  10  8  9  15  18  16  5  11  12  19  14  17  13  
+
+CMD : ins 20
+Min Heap : - 1  2  3  6  7  4  10  8  9  15  18  16  5  11  12  19  14  17  13  20  
+
+CMD : post 4 : 19 14 8 17 13 9 6 
+Min Heap : - 1  2  3  6  7  4  10  8  9  15  18  16  5  11  12  19  14  17  13  20  
+

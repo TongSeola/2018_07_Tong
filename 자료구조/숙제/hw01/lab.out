@@ -1,0 +1,163 @@
+infix expression : [3  *  (  2  +  4  *  3  -  5  )  /  2  *  3  +  4  -  (  5  +  3  )  +  2]
+Token : 3
+Stack : 
+Token : *
+Stack : * 
+Token : (
+Stack : * ( 
+Token : 2
+Stack : * ( 
+Token : +
+Stack : * ( + 
+Token : 4
+Stack : * ( + 
+Token : *
+Stack : * ( + * 
+Token : 3
+Stack : * ( + * 
+Token : -
+Stack : * ( - 
+Token : 5
+Stack : * ( - 
+Token : )
+Stack : * 
+Token : /
+Stack : / 
+Token : 2
+Stack : / 
+Token : *
+Stack : * 
+Token : 3
+Stack : * 
+Token : +
+Stack : + 
+Token : 4
+Stack : + 
+Token : -
+Stack : - 
+Token : (
+Stack : - ( 
+Token : 5
+Stack : - ( 
+Token : +
+Stack : - ( + 
+Token : 3
+Stack : - ( + 
+Token : )
+Stack : - 
+Token : +
+Stack : + 
+Token : 2
+Stack : + 
+Postfix expression : [3  2  4  3  *  +  5  -  *  2  /  3  *  4  +  5  3  +  -  2  +]
+Evaluation : 38.5
+infix expression : [(  6  *  (  8  +  4  )  *  2  -  5  )  /  2  -  3  +  9  *  7  -  3  *  5]
+Token : (
+Stack : ( 
+Token : 6
+Stack : ( 
+Token : *
+Stack : ( * 
+Token : (
+Stack : ( * ( 
+Token : 8
+Stack : ( * ( 
+Token : +
+Stack : ( * ( + 
+Token : 4
+Stack : ( * ( + 
+Token : )
+Stack : ( * 
+Token : *
+Stack : ( * 
+Token : 2
+Stack : ( * 
+Token : -
+Stack : ( - 
+Token : 5
+Stack : ( - 
+Token : )
+Stack : 
+Token : /
+Stack : / 
+Token : 2
+Stack : / 
+Token : -
+Stack : - 
+Token : 3
+Stack : - 
+Token : +
+Stack : + 
+Token : 9
+Stack : + 
+Token : *
+Stack : + * 
+Token : 7
+Stack : + * 
+Token : -
+Stack : - 
+Token : 3
+Stack : - 
+Token : *
+Stack : - * 
+Token : 5
+Stack : - * 
+Postfix expression : [6  8  4  +  *  2  *  5  -  2  /  3  -  9  7  *  +  3  5  *  -]
+Evaluation : 114.5
+infix expression : [(  (  (  2  +  3  -  6  *  8  )  /  5  +  (  4  -  7  )  /  5  )  *  2  +  4  )]
+Token : (
+Stack : ( 
+Token : (
+Stack : ( ( 
+Token : (
+Stack : ( ( ( 
+Token : 2
+Stack : ( ( ( 
+Token : +
+Stack : ( ( ( + 
+Token : 3
+Stack : ( ( ( + 
+Token : -
+Stack : ( ( ( - 
+Token : 6
+Stack : ( ( ( - 
+Token : *
+Stack : ( ( ( - * 
+Token : 8
+Stack : ( ( ( - * 
+Token : )
+Stack : ( ( 
+Token : /
+Stack : ( ( / 
+Token : 5
+Stack : ( ( / 
+Token : +
+Stack : ( ( + 
+Token : (
+Stack : ( ( + ( 
+Token : 4
+Stack : ( ( + ( 
+Token : -
+Stack : ( ( + ( - 
+Token : 7
+Stack : ( ( + ( - 
+Token : )
+Stack : ( ( + 
+Token : /
+Stack : ( ( + / 
+Token : 5
+Stack : ( ( + / 
+Token : )
+Stack : ( 
+Token : *
+Stack : ( * 
+Token : 2
+Stack : ( * 
+Token : +
+Stack : ( + 
+Token : 4
+Stack : ( + 
+Token : )
+Stack : 
+Postfix expression : [2  3  +  6  8  *  -  5  /  4  7  -  5  /  +  2  *  4  +]
+Evaluation : -14.4

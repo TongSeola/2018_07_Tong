@@ -1,0 +1,69 @@
+List (1) : 1 
+
+Cannot Insert into position 2
+List (1) : 1 
+
+List (2) : 3 1 
+
+List (3) : 3 4 1 
+
+List (4) : 3 4 1 5 
+
+	Output : 3
+List (3) : 4 1 5 
+
+List (4) : 4 1 6 5 
+
+List (5) : 4 1 6 5 8 
+
+	Output : 4
+List (4) : 1 6 5 8 
+
+List (5) : 1 6 10 5 8 
+
+	Output : 1
+List (4) : 6 10 5 8 
+
+List (5) : 6 10 5 11 8 
+
+	Output : 6
+List (4) : 10 5 11 8 
+
+List (5) : 10 13 5 11 8 
+
+	Output : 10
+List (4) : 13 5 11 8 
+
+List (5) : 13 5 14 11 8 
+
+	Output : 13
+List (4) : 5 14 11 8 
+
+List (5) : 5 14 11 8 16 
+
+	Output : 5
+List (4) : 14 11 8 16 
+
+Cannot Insert into position 5
+List (4) : 14 11 8 16 
+
+Cannot Insert into position 10
+List (4) : 14 11 8 16 
+
+	Output : 14
+List (3) : 11 8 16 
+
+	Output : 11
+List (2) : 8 16 
+
+	Output : 8
+List (1) : 16 
+
+	Output : 16
+List (0) : 
+
+Chain is Empty!
+List (0) : 
+
+List (1) : 18 
+
